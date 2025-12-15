@@ -1,0 +1,43 @@
+<aside class="sidebar">
+            <div class="logo">
+                <!-- <i class="fas fa-video"></i> -->
+                <h1>Orca Sentinel Pro</h1>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="/" class="nav-item {% if request.path == '/' %}active{% endif %}">
+                    <i class="fas fa-tv"></i>
+                    Live View
+                </a>
+                <a href="/playback" class="nav-item {% if '/playback' in request.path %}active{% endif %}">
+                    <i class="fas fa-history"></i>
+                    Playback
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-user-friends"></i>
+                    People Counting
+                    <span class="nav-badge">AI</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Heat Maps
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-bell"></i>
+                    Alerts
+                    <span class="nav-badge">12</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    Analytics
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-video"></i>
+                    Cameras
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-cog"></i>
+                    System Settings
+                </a>
+            </nav>
+        </aside>

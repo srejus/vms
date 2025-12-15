@@ -1,0 +1,231 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMS Pro | Video Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body class="light-mode">
+    <div class="container">
+        <!-- Sidebar -->
+        {% include 'includes/sidebar.html' %}
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <h2>
+                    Video Management System
+                    <span class="live-badge">LIVE</span>
+                </h2>
+                <div class="header-controls">
+                    <div class="theme-toggle">
+                        <span class="toggle-label">Theme</span>
+                        <div class="toggle-switch" id="themeToggle">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                            <span class="toggle-slider"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="user-profile">
+                        <i class="fas fa-user-circle" style="font-size: 32px; color: var(--primary-color);"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Cameras Section -->
+            <div class="camera-section">
+              
+                
+                <div class="camera-grid">
+                    <div class="camera-card">
+                        <div class="camera-header">
+                            <div class="camera-title">
+                                <span class="camera-status recording"></span>
+                                Lobby - Main Entrance
+                            </div>
+                            <div class="camera-actions">
+                                <i class="fas fa-expand" style="color: var(--text-secondary); cursor: pointer;"></i>
+                            </div>
+                        </div>
+                        <div class="camera-preview">
+                            <i class="fas fa-video"></i>
+                            <div class="camera-overlay">LIVE</div>
+                        </div>
+                        <div class="camera-info">
+                            <div>Resolution: 4K | FPS: 30</div>
+                            <div class="camera-stats">
+                                <div class="stat">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>24 people</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-history"></i>
+                                    <span>Recording</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="camera-card">
+                        <div class="camera-header">
+                            <div class="camera-title">
+                                <span class="camera-status online"></span>
+                                Parking Lot - North
+                            </div>
+                            <div class="camera-actions">
+                                <i class="fas fa-expand" style="color: var(--text-secondary); cursor: pointer;"></i>
+                            </div>
+                        </div>
+                        <div class="camera-preview">
+                            <i class="fas fa-video"></i>
+                            <div class="camera-overlay">LIVE</div>
+                        </div>
+                        <div class="camera-info">
+                            <div>Resolution: 1080p | FPS: 25</div>
+                            <div class="camera-stats">
+                                <div class="stat">
+                                    <i class="fas fa-car"></i>
+                                    <span>18 vehicles</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-history"></i>
+                                    <span>Recording</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="camera-card">
+                        <div class="camera-header">
+                            <div class="camera-title">
+                                <span class="camera-status online"></span>
+                                Parking Lot - North
+                            </div>
+                            <div class="camera-actions">
+                                <i class="fas fa-expand" style="color: var(--text-secondary); cursor: pointer;"></i>
+                            </div>
+                        </div>
+                        <div class="camera-preview">
+                            <i class="fas fa-video"></i>
+                            <div class="camera-overlay">LIVE</div>
+                        </div>
+                        <div class="camera-info">
+                            <div>Resolution: 1080p | FPS: 25</div>
+                            <div class="camera-stats">
+                                <div class="stat">
+                                    <i class="fas fa-car"></i>
+                                    <span>18 vehicles</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-history"></i>
+                                    <span>Recording</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="camera-card">
+                        <div class="camera-header">
+                            <div class="camera-title">
+                                <span class="camera-status online"></span>
+                                Parking Lot - North
+                            </div>
+                            <div class="camera-actions">
+                                <i class="fas fa-expand" style="color: var(--text-secondary); cursor: pointer;"></i>
+                            </div>
+                        </div>
+                        <div class="camera-preview">
+                            <i class="fas fa-video"></i>
+                            <div class="camera-overlay">LIVE</div>
+                        </div>
+                        <div class="camera-info">
+                            <div>Resolution: 1080p | FPS: 25</div>
+                            <div class="camera-stats">
+                                <div class="stat">
+                                    <i class="fas fa-car"></i>
+                                    <span>18 vehicles</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-history"></i>
+                                    <span>Recording</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="camera-card">
+                        <div class="camera-header">
+                            <div class="camera-title">
+                                <span class="camera-status online"></span>
+                                Parking Lot - North
+                            </div>
+                            <div class="camera-actions">
+                                <i class="fas fa-expand" style="color: var(--text-secondary); cursor: pointer;"></i>
+                            </div>
+                        </div>
+                        <div class="camera-preview">
+                            <i class="fas fa-video"></i>
+                            <div class="camera-overlay">LIVE</div>
+                        </div>
+                        <div class="camera-info">
+                            <div>Resolution: 1080p | FPS: 25</div>
+                            <div class="camera-stats">
+                                <div class="stat">
+                                    <i class="fas fa-car"></i>
+                                    <span>18 vehicles</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-history"></i>
+                                    <span>Recording</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="camera-card">
+                        <div class="camera-header">
+                            <div class="camera-title">
+                                <span class="camera-status online"></span>
+                                Retail Floor - Zone A
+                            </div>
+                            <div class="camera-actions">
+                                <i class="fas fa-expand" style="color: var(--text-secondary); cursor: pointer;"></i>
+                            </div>
+                        </div>
+                        <div class="camera-preview">
+                            <i class="fas fa-video"></i>
+                            <div class="camera-overlay">LIVE</div>
+                        </div>
+                        <div class="camera-info">
+                            <div>Resolution: 4K | FPS: 30</div>
+                            <div class="camera-stats">
+                                <div class="stat">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>56 people</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-bell"></i>
+                                    <span>AI Monitoring</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Footer -->
+            <footer class="footer">
+                <p>© 2023 VMS Professional. All rights reserved. | Video Management System v4.5 | 48 Cameras Connected</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="{% static 'scripts/index.js' %}"></script>
+</body>
+</html>

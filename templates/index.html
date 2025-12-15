@@ -1,0 +1,249 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMS Pro | Video Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body class="light-mode">
+    <div class="container">
+        <!-- Sidebar -->
+        {% include 'includes/sidebar.html' %}
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <h2>
+                    Video Management System
+                    <span class="live-badge">LIVE</span>
+                </h2>
+                <div class="header-controls">
+                    <div class="theme-toggle">
+                        <span class="toggle-label">Theme</span>
+                        <div class="toggle-switch" id="themeToggle">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                            <span class="toggle-slider"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="user-profile">
+                        <i class="fas fa-user-circle" style="font-size: 32px; color: var(--primary-color);"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Analytics Cards -->
+            <div class="analytics-container">
+                <div class="analytics-card">
+                    <div class="analytics-header">
+                        <h3>Total Cameras</h3>
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="analytics-value">48</div>
+                    <div class="analytics-label">42 Online | 6 Offline</div>
+                    <div class="analytics-progress">
+                        <div class="progress-bar" style="width: 87.5%"></div>
+                    </div>
+                </div>
+                
+                <div class="analytics-card">
+                    <div class="analytics-header">
+                        <h3>People Count</h3>
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div class="analytics-value">1,247</div>
+                    <div class="analytics-label">Current in all zones</div>
+                    <div class="analytics-progress">
+                        <div class="progress-bar" style="width: 65%"></div>
+                    </div>
+                </div>
+                
+                <div class="analytics-card">
+                    <div class="analytics-header">
+                        <h3>Alerts Today</h3>
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="analytics-value">12</div>
+                    <div class="analytics-label">3 Critical | 9 Warnings</div>
+                    <div class="analytics-progress">
+                        <div class="progress-bar" style="width: 40%"></div>
+                    </div>
+                </div>
+                
+                <div class="analytics-card">
+                    <div class="analytics-header">
+                        <h3>Storage</h3>
+                        <i class="fas fa-hdd"></i>
+                    </div>
+                    <div class="analytics-value">78%</div>
+                    <div class="analytics-label">14.2TB of 18TB used</div>
+                    <div class="analytics-progress">
+                        <div class="progress-bar" style="width: 78%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Live Cameras Section -->
+            <div class="camera-section">
+                <div class="section-header">
+                    <h3>Live Camera Feeds</h3>
+                    <a href="#" class="view-all">
+                        View All <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="camera-grid">
+                    <div class="camera-card">
+                        <div class="camera-header">
+                            <div class="camera-title">
+                                <span class="camera-status recording"></span>
+                                Lobby - Main Entrance
+                            </div>
+                            <div class="camera-actions">
+                                <i class="fas fa-expand" style="color: var(--text-secondary); cursor: pointer;"></i>
+                            </div>
+                        </div>
+                        <div class="camera-preview">
+                            <i class="fas fa-video"></i>
+                            <div class="camera-overlay">LIVE</div>
+                        </div>
+                        <div class="camera-info">
+                            <div>Resolution: 4K | FPS: 30</div>
+                            <div class="camera-stats">
+                                <div class="stat">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>24 people</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-history"></i>
+                                    <span>Recording</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="camera-card">
+                        <div class="camera-header">
+                            <div class="camera-title">
+                                <span class="camera-status online"></span>
+                                Parking Lot - North
+                            </div>
+                            <div class="camera-actions">
+                                <i class="fas fa-expand" style="color: var(--text-secondary); cursor: pointer;"></i>
+                            </div>
+                        </div>
+                        <div class="camera-preview">
+                            <i class="fas fa-video"></i>
+                            <div class="camera-overlay">LIVE</div>
+                        </div>
+                        <div class="camera-info">
+                            <div>Resolution: 1080p | FPS: 25</div>
+                            <div class="camera-stats">
+                                <div class="stat">
+                                    <i class="fas fa-car"></i>
+                                    <span>18 vehicles</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-history"></i>
+                                    <span>Recording</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="camera-card">
+                        <div class="camera-header">
+                            <div class="camera-title">
+                                <span class="camera-status online"></span>
+                                Retail Floor - Zone A
+                            </div>
+                            <div class="camera-actions">
+                                <i class="fas fa-expand" style="color: var(--text-secondary); cursor: pointer;"></i>
+                            </div>
+                        </div>
+                        <div class="camera-preview">
+                            <i class="fas fa-video"></i>
+                            <div class="camera-overlay">LIVE</div>
+                        </div>
+                        <div class="camera-info">
+                            <div>Resolution: 4K | FPS: 30</div>
+                            <div class="camera-stats">
+                                <div class="stat">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>56 people</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-bell"></i>
+                                    <span>AI Monitoring</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alerts Panel -->
+            <div class="alert-panel">
+                <div class="alert-header">
+                    <h3>Recent Alerts</h3>
+                    <a href="#" class="view-all">
+                        View All <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="alert-item critical">
+                    <div class="alert-icon">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <div>
+                        <div class="alert-title">Unauthorized Access Detected</div>
+                        <div class="alert-details">Camera: Parking Lot - South | Time: 14:23</div>
+                    </div>
+                </div>
+                
+                <div class="alert-item warning">
+                    <div class="alert-icon">
+                        <i class="fas fa-user-slash"></i>
+                    </div>
+                    <div>
+                        <div class="alert-title">Crowd Density Threshold Exceeded</div>
+                        <div class="alert-details">Zone: Retail Floor - Zone B | Count: 42 people</div>
+                    </div>
+                </div>
+                
+                <div class="alert-item info">
+                    <div class="alert-icon">
+                        <i class="fas fa-video-slash"></i>
+                    </div>
+                    <div>
+                        <div class="alert-title">Camera Connection Lost</div>
+                        <div class="alert-details">Camera: Warehouse - East | Duration: 5 min</div>
+                    </div>
+                </div>
+                
+                <div class="alert-item warning">
+                    <div class="alert-icon">
+                        <i class="fas fa-male"></i>
+                    </div>
+                    <div>
+                        <div class="alert-title">Loitering Detected</div>
+                        <div class="alert-details">Camera: Main Entrance | Duration: 8+ minutes</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>© 2023 VMS Professional. All rights reserved. | Video Management System v4.5 | 48 Cameras Connected</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="{% static 'scripts/index.js' %}"></script>
+</body>
+</html>
