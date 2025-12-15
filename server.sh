@@ -6,7 +6,6 @@ LOG_DIR="$BASE_DIR/logs"
 mkdir -p "$LOG_DIR"
 
 LOG_FILE="$LOG_DIR/vms.log"
-PORT=9070
 
 start_servers() {
     echo "Starting Gunicorn server for vms on port $PORT..."
