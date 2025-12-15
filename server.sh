@@ -18,7 +18,7 @@ start_servers() {
         --access-logfile "$LOG_FILE" \
         --error-logfile "$LOG_FILE" \
         --timeout 180 \
-        vms.wsgi:application &
+        vms_project.wsgi:application &
 
     echo "Server started on port $PORT."
 }
