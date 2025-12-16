@@ -7,3 +7,7 @@ def index_view(request):
 
 def playback_view(request):
     return render(request,'playback.html')
+
+
+def camera_view(request):
+    return render(request,'cameras.html')
